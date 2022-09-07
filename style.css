@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+*{
+    font-family: "Poppins";
+}
+.primary-btn{
+    padding: 0.8em 1.8em;
+}
+/* overriding carsousel default classes  */
+.carousel-item{
+    height: 700px;
+}
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.carousel-caption{
+    width: 65%;
+    height: 70%;
+}
+.carousel-caption h5{
+    font-size: 70px;
+}
+/* ...........  */
+/* other section classes over rideing  */
+.course-title-container{
+    width: 40%;
+}
+.course-image{
+    height: 200px;
+}
+.faq-container{
+    width: 55%;
+}
+/* .................  */
+/* media query for tablet  */
+@media screen and (max-width:991px) {
+    .carousel-item{
+        height: 400px;
+    }
+    .carousel-caption{
+        height: 60%;
+        margin-bottom: 15%;
+    }
+    .carousel-caption h5{
+        font-size: 40px;
+    }
+    .course-title-container{
+        width: 60%;
+    }
+    .faq-container{
+        width: 100%;
+    }
+}
+/* ...................  */
+/* media query for phone  */
+@media screen and (max-width:476px) {
+    .primary-btn{
+        padding: 0.5em 1em;
+    }
+    .carousel-item{
+        height: 300px;
+    }
+    .carousel-caption{
+        height: 30%;
+        width: 75%;
+        margin-bottom: 46%;
+    }
+    .carousel-caption h5{
+        font-size: 20px;
+    }
+    .carousel-caption p{
+        font-size: 12px;
+    }
+    .course-title-container{
+        width: 90%;
+    }
+    .course-image{
+        width: 100%;
+    }
+    .course-image > img{
+        width: 100%;
+    }
+    .faq-container{
+        width: 100%;
+    }
+}
+/* ................  */
