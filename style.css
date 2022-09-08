@@ -103,9 +103,11 @@ a, a:hover{
     }
     .course-image{
         width: 100%;
+        height: 300px;
     }
     .course-image > img{
         width: 100%;
+        height: 100%;
     }
     .faq-container{
         width: 100%;
